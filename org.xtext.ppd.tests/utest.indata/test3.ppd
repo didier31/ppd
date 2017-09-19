@@ -1,0 +1,9 @@
+<P 42 STRICT>
+<HS 10>
+<G 6>
+"Nom" " => " <RJ> "Garcin" <RJ/> " Prenom" " => "  <RJ> "Didier" <RJ/>
+"Prenom" " => "  <RJ> "Didier" <RJ/> " Nom" " => " <RJ> "Garcin" <RJ/>
+"Nom" " => " <RJ> "Garcin2" <RJ/> " Nom2" " => " <RJ> "Garcin2" <RJ/>
+<G/>
+
+<P/>

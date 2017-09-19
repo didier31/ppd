@@ -1,0 +1,29 @@
+<P 600 STRICT>
+<G 1>
+<LA> "Nom" " => " <RJ> "Garcin" <RJ/> <LA/>
+<LA> "Prenom" " => "  <RJ> "Didier" <RJ/> <LA/>
+<LA> "Prenom" " => "  <RJ> "Didier" <RJ/> <LA/>
+<LA> "Nom" " => " <RJ> "Garcin" <RJ/> <LA/>
+<LA> "Nom" " => " <RJ> "Garcin2" <RJ/> <LA/>
+<LA> "Nom2" " => " <RJ> "Garcin2" <RJ/> <LA/>
+<G/>
+<VS 1>
+<G 2>
+<LA> "Nom" " => " <RJ> "Garcin" <RJ/> <LA/>
+<LA> " Prenom" " => "  <RJ> "Didier" <RJ/> <LA/>
+<LA> "Prenom" " => "  <RJ> "Didier" <RJ/> <LA/>
+<LA> " Nom" " => " <RJ> "Garcin" <RJ/> <LA/>
+<LA> "Nom" " => " <RJ> "Garcin2" <RJ/> <LA/>
+<LA> " Nom2" " => " <RJ> "Garcin2" <RJ/> <LA/>
+<G/>
+<VS 1>
+<G 2>
+"Nom" " => " <RJ> "Garcin" <RJ/>
+" Prenom" " => "  <RJ> "Didier" <RJ/>
+"Prenom" " => "  <RJ> "Didier" <RJ/>
+" Nom" " => " <RJ> "Garcin" <RJ/>
+"Nom" " => " <RJ> "Garcin2" <RJ/>
+" Nom2" " => " <RJ> "Garcin2" <RJ/>
+<G/>
+
+<P/>

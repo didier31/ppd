@@ -1,0 +1,20 @@
+Nom =>    Garcin
+Prenom => Didier
+Prenom => Didier
+Nom =>    Garcin
+Nom =>   Garcin2
+Nom2 =>  Garcin2
+
+Nom =>    Garcin Prenom => Didier
+Prenom => Didier Nom =>    Garcin
+Nom =>   Garcin2 Nom2 =>  Garcin2
+
+Nom     => 
+ Garcin Prenom
+ =>  Didier
+Prenom  => 
+ Didier Nom
+ =>  Garcin
+Nom     => 
+Garcin2 Nom2
+ => Garcin2

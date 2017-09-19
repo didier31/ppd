@@ -1,0 +1,49 @@
+<P 90 STRICT>
+"procedure " "Toto " <LA>"(" <LA>"a : integer ; " "b : String; " "a : integer; " "b : String; " "a : integer; " "b : String"<LA/> ")" " return Integer" " is"<LA/>
+<VS 1>
+"id : " "IDENTITE " ":= " <LA> "( " <G 2> <LA> "Nom" " => " <RJ> "'GARCIN'" ", " <RJ/> <LA/>  
+                                          <LA> "Prenom" " => " <RJ> "'Didier'" ", " <RJ/> <LA/>
+                                          <LA> "Ville" " => " <RJ> "'Toulouse'" ", " <RJ/> <LA/>
+                                          <LA> "Adresse" " => " <RJ> "'35 rue Edmond Rostand'" ", " <RJ/> <LA/>
+                                          <LA> "Code Postal" " => " <RJ> "'31200'" ", " <RJ/> <LA/>
+                                          <LA> "Ville natale" " => " <RJ> "'Cahors'" ", " <RJ/> <LA/>
+                                          <LA> "Profession" " => " <RJ> "'Ingénieur Logiciel'" <RJ/> <LA/>
+                                    <G/> ");" <LA/>
+<VS 1>
+<HS 3>                                    
+"id : " "IDENTITE " ":= " <LA> "( " <G 4> "Nom" " => " <RJ> "'GARCIN'" <RJ/> ", "  
+                                          "Prenom" " => " <RJ> "'Didier'" <RJ/> ", "
+                                          "Ville" " => " <RJ> "'Toulouse'" <RJ/> ", "
+                                          "Adresse" " => " <RJ> "'35 rue Edmond Rostand'" <RJ/> ", "
+                                          "Code Postal"  " => " <RJ> "'31200'" <RJ/> ", "
+                                          "Ville natale" " => " <RJ> "'Cahors'" <RJ/> ", "
+                                          "Profession"  " => " <RJ> "'Ingénieur Logiciel'" <RJ/>
+                                    <G/> ");" <LA/>                                    
+                                    
+<VS 1>
+<HS 6>                                    
+"id : " "IDENTITE " ":= " <LA> "( " <G 4> "Nom" " => " "'GARCIN'" ", "  
+                                          "Prenom" " => " "'Didier'" ", "
+                                          "Ville" " => " "'Toulouse'" ", "
+                                          "Adresse"  " => " "'35 rue Edmond Rostand'"  ", "
+                                          "Code Postal" " => " "'31200'" ", "
+                                          "Ville natale" " => " "'Cahors'" ", "
+                                          "Profession" " => " "'Ingénieur Logiciel'"    
+                                    <G/> ");" <LA/>                                    
+                                    
+<VS 1>
+"begin"
+<VS 0>
+"if a = 1 then"
+<VS 0>
+<HS 3>
+<LA>
+"x := 1;"
+<VS 0>
+"y := a * 2;"
+<LA/>
+<VS 0>
+"end if;"
+<VS 0>
+"end Toto;"
+<P/>

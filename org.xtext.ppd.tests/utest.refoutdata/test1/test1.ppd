@@ -1,0 +1,30 @@
+procedure Toto (a : integer ; b : String;a : integer; b : String; a : integer; b : String)
+                return Integer is
+
+id : IDENTITE := ( Nom =>                     'GARCIN', Prenom =>                 'Didier', 
+                   Ville =>                 'Toulouse', Adresse => '35 rue Edmond Rostand', 
+                   Code Postal =>              '31200', Ville natale =>           'Cahors', 
+                   Profession => 'Ingénieur Logiciel');
+
+   id : IDENTITE := ( Nom          =>                'GARCIN', 
+                      Prenom       =>                'Didier', 
+                      Ville        =>              'Toulouse', 
+                      Adresse      => '35 rue Edmond Rostand', 
+                      Code Postal  =>                 '31200', 
+                      Ville natale =>                'Cahors', 
+                      Profession   =>   'Ingénieur Logiciel');
+
+      id : IDENTITE := ( Nom          => 'GARCIN'               , 
+                         Prenom       => 'Didier'               , 
+                         Ville        => 'Toulouse'             , 
+                         Adresse      => '35 rue Edmond Rostand', 
+                         Code Postal  => '31200'                , 
+                         Ville natale => 'Cahors'               , 
+                         Profession   => 'Ingénieur Logiciel');
+
+begin
+if a = 1 then
+   x := 1;
+   y := a * 2;
+end if;
+end Toto;
