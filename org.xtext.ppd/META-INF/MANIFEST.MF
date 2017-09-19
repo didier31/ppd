@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.ppd
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.ppd; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common,
+ org.apache.commons.lang;bundle-version="2.6.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.xtext.ppd,
+ org.xtext.ppd.format,
+ org.xtext.ppd.generator,
+ org.xtext.ppd.parser.antlr,
+ org.xtext.ppd.parser.antlr.internal,
+ org.xtext.ppd.ppd,
+ org.xtext.ppd.ppd.impl,
+ org.xtext.ppd.ppd.util,
+ org.xtext.ppd.scoping,
+ org.xtext.ppd.serializer,
+ org.xtext.ppd.services,
+ org.xtext.ppd.validation
+Import-Package: org.apache.log4j

@@ -1,0 +1,38 @@
+grammar org.xtext.ppd.Ppd with org.eclipse.xtext.common.Terminals hidden(WS) 
+
+generate ppd "http://www.xtext.org/ppd"
+
+Document: {Document} PAGE paper=Paper? '>' contents += Content* ENDPAGE?;
+
+Paper: width=INT folding?=STRICT?;
+
+Content:  vs=VS? hs=HS? simpleContent=SimpleContent;
+
+SimpleContent : Frame | Textual;
+
+Textual: text=TEXT;
+
+Frame: GB | LAB | RJB;
+
+VS: VST spc=INT more?="+"? '>' ;
+HS: HST spc=INT more?="+"? '>' ;
+
+LAB: {LAB} (LA contents += Content* ENDLA);
+
+GB: {GB} (GRID columns = INT '>' contents += Content* ENDGRID);
+
+RJB: {RJB} (RJ contents += Content* ENDRJ);
+
+terminal VST : "<VS";
+terminal HST : "<HS";
+terminal LA : '<LA>';
+terminal ENDLA : '<LA/>';
+terminal PAGE : '<P';
+terminal ENDPAGE : '<P/>';
+terminal GRID : '<G';
+terminal ENDGRID: '<G/>';
+terminal RJ : '<RJ>';
+terminal ENDRJ : '<RJ/>';
+terminal STRICT : 'STRICT';
+terminal WS : (' '|'\t'|'\r'|'\n')+;
+terminal TEXT: '"' ( '\\'('b'|'t'|'n'|'f'|'r'|'u'|'"'|"'"|'\\') | !('\\'|'"') )* '"';

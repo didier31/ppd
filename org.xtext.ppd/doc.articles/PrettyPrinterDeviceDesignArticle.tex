@@ -1,0 +1,66 @@
+\documentclass[french]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[francais]{babel}
+\usepackage{caption}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Define some dedicated styles
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
+
+\newcommand\element[1]{\textit{#1}}
+\newcommand\class[1]{\textbf{\textit{#1}}}
+ 
+\title{Formatage de code source}
+\author{Didier Garcin}
+\date{2 avril 2015}
+\begin {document}
+\maketitle
+\abstract {Cet article présente un langage abstrait de formatage de code source,
+simple, efficace et puissant.}
+
+\part {Presentation formelle du langage de formatage}
+
+  \begin{figure}\label{fig:DiagrammeDeClasse}
+  \includegraphics[scale=0.71]{"../model/ppd class diagram"}
+  \captionof{figure}{Diagramme de classe du langage abstrait}
+  \end{figure}
+  
+  \section{classe \class{Paper}}
+  
+  Un format se compose d'une instance de la classe \class{Paper}. Cette instance
+  définit la largeur de page via son attribut \element{width} et la politique de
+  coupure via son attribut \element{folding}. A la valeur, vrai, ce dernier
+  empêche tout débordement de ligne. A la valeur faux, l'utilisation de la
+  largeur prime sur un débordement éventuel.
+  
+  \section {classe \class{Content}}
+  
+  Un contenu quel qu'il soit peut être précédé par un espacement vertical
+  (attribut \element{vs}) et une marge à gauche (attribut \element{hs}).
+  
+  \section {classe \class{HS} \class{VS}}
+  
+  Ces espacements sont fixés à la valeur de \element{spc} lorsque \element{more}
+  est à la valeur, faux sinon s'ajoute à l'espacement existant du texte (celui
+  tapé par le rédacteur).
+  
+  \section {classe \class{Frame}}
+  
+  \class{Frame} est un type de contenu formattant un suite de contenus. Il a
+  pour effet soit de justifier à gauche (\class{LAB}), soit de justifier à 
+  droite (\class{RJB}), soit de distribuer ses contenus en colonnes
+  (\class{GB}). 
+  
+  \section {classe \class{Textual}}
+  Cette classe contient du texte dans son plus simple appareil.
+  
+  \part {Exemple de rendu issue de l'implémentation}
+  
+  \begin{figure}\label{fig:listing}
+  \includegraphics[scale=0.63]{"listing"}
+  \captionof{figure}{Programme Ada formaté}
+  \end{figure}
+
+\end {document}

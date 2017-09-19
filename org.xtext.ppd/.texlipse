@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Fri Aug 26 16:51:16 CEST 2016
+markTmpDer=true
+builderNum=2
+outputDir=doc.articles/artefacts/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=doc.articles/tmp
+mainTexFile=PrettyPrinterDeviceDesignArticle.tex
+outputFile=PrettyPrinterDeviceDesignArticle.pdf
+langSpell=eu
+markDer=true
+srcDir=doc.articles/
